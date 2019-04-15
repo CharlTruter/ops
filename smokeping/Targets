@@ -1,0 +1,175 @@
+*** Targets ***
+
+probe = FPing
+slaves = home-htpc
+
+menu = Top
+title = Network Latency Grapher
+remark = Some latency graphing
+
++ Local-Network
+
+menu = Local Network
+title = Local Network
+
+++ Local-Router
+menu = Local Router
+title = Local Router
+host = 192.168.0.254
+nomasterpoll = yes
+
++ Fibre
+
+menu = Internet Connection
+title = Internet Connection
+
+++ CISP-Hop-1
+menu = CISP Hop 1
+title = CISP Hop 1
+host = 154.0.0.246
+nomasterpoll = yes
+
+++ CISP-Hop-2
+menu = CISP Hop 2
+title = CISP Hop 2
+host = 154.0.4.162
+nomasterpoll = yes
+
+++ CISP-Dns-1
+menu = CISP DNS 1
+title = CISP DNS 1
+host = 154.0.1.1
+nomasterpoll = yes
+
+++ CISP-Dns-2
+menu = CISP DNS 2
+title = CISP DNS 2
+host = 155.93.255.1
+nomasterpoll = yes
+
+++ CISP-Jhb
+menu = CISP Jhb
+title = CISP Jhb
+host = 154.0.1.245
+nomasterpoll = yes
+
+++ CISP-London
+menu = CISP London
+title = CISP London
+host = 154.0.4.158
+nomasterpoll = yes
+
++ Google
+
+menu = Google
+title = Google
+
+++ Google-JHB
+menu = Google JHB
+title = Google JHB
+host = 72.14.239.129
+nomasterpoll = yes
+
+++ Google-LHR
+menu = Google LHR
+title = Google LHR
+host = 216.58.198.100
+nomasterpoll = yes
+
++ Local-Websites
+
+menu = Local Websites
+title = Local Websites
+
+++ EWN
+menu = EWN
+title = ewn.co.za
+host = 41.168.20.229
+nomasterpoll = yes
+
+++ MyBroadBand
+menu = MyBroadBand
+title = mybroadband.co.za
+host = 197.242.89.170
+nomasterpoll = yes
+
+++ Telkom
+menu = Telkom
+title = telkom.co.za
+host = 196.43.22.222
+nomasterpoll = yes
+
++ International-Websites
+
+menu = International Websites
+title = International Websites
+
+++ Apple
+menu = Apple
+title = apple.com
+host = 95.101.221.15
+nomasterpoll = yes
+
+++ BBC
+menu = BBC
+title = bbc.co.uk
+host = 212.58.244.71
+nomasterpoll = yes
+
+++ CoreIX
+menu = CoreIX
+title = coreix.net
+host = 85.13.221.178
+nomasterpoll = yes
+
+++ Slashdot
+menu = Slashdot
+title = slashdot.org
+host = 216.105.38.15
+nomasterpoll = yes
+
+++ Twitter
+menu = Twitter
+title = twitter.com
+host = 199.59.148.82
+nomasterpoll = yes
+
++ DNS
+menu = DNS
+title = DNS
+
+++ GoogleDNS1
+menu = Google DNS 1
+title = Google DNS 8.8.8.8
+host = 8.8.8.8
+nomasterpoll = yes
+
+++ GoogleDNS2
+menu = Google DNS 2
+title = Google DNS 8.8.4.4
+host = 8.8.4.4
+nomasterpoll = yes
+
+++ OpenDNS1
+menu = OpenDNS1
+title = OpenDNS1
+host = 208.67.222.222
+nomasterpoll = yes
+
+++ OpenDNS2
+menu = OpenDNS2
+title = OpenDNS2
+host = 208.67.220.220
+nomasterpoll = yes
+
+++ CloudflareDNS1
+menu = Cloudflare DNS 1
+title = Cloudflare DNS 1.1.1.1
+host = 1.1.1.1
+nomasterpoll = yes
+
+++ CloudflareDNS2
+menu = Cloudflare DNS 2
+title = Cloudflare DNS 1.0.0.1
+host = 1.0.0.1
+nomasterpoll = yes

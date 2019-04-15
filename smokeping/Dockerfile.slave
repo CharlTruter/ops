@@ -1,0 +1,11 @@
+FROM linuxserver/smokeping
+
+ARG smokeping_url
+ARG smokeping_slave_secret
+ARG smokeping_slave_name
+
+RUN mkdir -p /tmp/smokeping-cache
+RUN echo "$smokeping_slave_secret" > /etc/smokeping/secret.txt
+RUN chown abc /etc/smokeping/secret.txt
+RUN chmod og-rw /etc/smokeping/secret.txt
+RUN sed -i "s|--config=\"/etc/smokeping/config\"|--config=\"/etc/smokeping/config\" --master-url=\"$smokeping_url\" --shared-secret=\"/etc/smokeping/secret.txt\" --cache-dir=\"/tmp/smokeping-cache\" --slave-name=\"$smokeping_slave_name\"|g" /etc/services.d/smokeping/run

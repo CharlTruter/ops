@@ -1,0 +1,12 @@
+version: '2'
+services:
+  master:
+    image: "${DOCKER_USER}/${DOCKER_MASTER_REPOSITORY}:latest"
+    ports:
+     - "80:80"
+    restart: always
+  slave:
+    image: "${DOCKER_USER}/${DOCKER_SLAVE_REPOSITORY}:latest"
+    ports:
+     - "80:80"
+    #restart: always

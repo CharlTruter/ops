@@ -1,0 +1,11 @@
+FROM linuxserver/smokeping
+
+COPY Targets /config/Targets
+COPY Slaves /config/Slaves
+
+ARG smokeping_slave_name
+ARG smokeping_slave_secret
+
+RUN echo "$smokeping_slave_name:$smokeping_slave_secret" > /etc/smokeping/smokeping_secrets
+RUN chown abc /etc/smokeping/smokeping_secrets
+RUN chmod og-rw /etc/smokeping/smokeping_secrets
